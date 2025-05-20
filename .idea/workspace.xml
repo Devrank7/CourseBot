@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="933772e7-6b77-488b-8a15-e8b8126a74bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CourseBot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/psql/connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/psql/enums/enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/psql/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/psql/service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routers/start_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/security_util.py" afterDir="false" />
+    <list default="true" id="933772e7-6b77-488b-8a15-e8b8126a74bd" name="Changes" comment="com 0">
+      <change afterPath="$PROJECT_DIR$/keyboards/keyboards.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/admin_routers/add_user_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/admin_routers/delete_user_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/admin_routers/list_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/back_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/psql/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/psql/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/psql/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/psql/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/admin_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/routers/admin_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/start_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/routers/start_router.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Devrank7"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Devrank7/CourseBot.git",
+    "accountId": "cca91272-7107-47eb-8fe1-1974f351cb62"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -50,11 +59,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/CourseBot/db/psql"
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/CourseBot"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\CourseBot" />
       <recent name="C:\Users\user\PycharmProjects\CourseBot\db\psql" />
     </key>
   </component>
@@ -74,6 +84,19 @@
       <option name="presentableId" value="Default" />
       <updated>1747687515277</updated>
     </task>
+    <task id="LOCAL-00001" summary="com 0">
+      <option name="closed" value="true" />
+      <created>1747741391245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747741391245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="com 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="com 0" />
   </component>
 </project>

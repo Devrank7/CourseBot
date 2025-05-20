@@ -4,7 +4,7 @@ from aiogram import BaseMiddleware
 from aiogram.types import Message, CallbackQuery
 
 from db.psql.enums.enums import Roles
-from db.psql.service import run_sql, ReadUserByUsername, CreateUser
+from db.psql.service import run_sql, ReadUserByUsername, CreateUser, UpdateUserName
 from utils.security_util import is_admin
 
 
@@ -28,6 +28,9 @@ class MsgMiddleware(BaseMiddleware):
                 CreateUser(tg_id=event.from_user.id, username=username, first_name=event.from_user.first_name,
                            last_name=event.from_user.last_name,
                            roles=Roles.ADMIN if is_admin(username) else Roles.USER))
+        if user.tg_id == -1:
+            user = await run_sql(UpdateUserName(username, tg_id=event.from_user.id, first_name=event.from_user.first_name,
+                                         last_name=event.from_user.last_name))
         print("User: ", username)
         if user.roles in self.roles:
             data["user"] = user
@@ -55,6 +58,9 @@ class CallbackMiddleware(BaseMiddleware):
                 CreateUser(tg_id=event.from_user.id, username=username, first_name=event.from_user.first_name,
                            last_name=event.from_user.last_name,
                            roles=Roles.ADMIN if is_admin(username) else Roles.USER))
+        if user.tg_id == -1:
+            user = await run_sql(UpdateUserName(username, tg_id=event.from_user.id, first_name=event.from_user.first_name,
+                                         last_name=event.from_user.last_name))
         print("User: ", username)
         if user.roles in self.roles:
             data["user"] = user

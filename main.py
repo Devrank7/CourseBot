@@ -3,6 +3,8 @@ import os
 from aiogram import Dispatcher, Bot
 from dotenv import load_dotenv
 
+from db.psql.connect import init_db
+from routers import start_router, course_router, back_router, admin_router
 
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
@@ -11,6 +13,9 @@ dispatcher = Dispatcher()
 
 routers = [
     start_router.router,
+    course_router.router,
+    back_router.router,
+    admin_router.router
 ]
 
 
